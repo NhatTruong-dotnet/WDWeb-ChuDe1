@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin-top: 70px;
+            background: #333;
+            color: #fff;
+            width: 100%;
+        }
+        .color{
+          color: black;
+        }
+        
+        .product{
+          display: flex;
+          margin:  10px;
+          align-items: center;
+          width: 100%;
+        }
+        .list-product{
+          /* display: flex; */
+          align-items: center;
+          margin: auto;
+        }
+        .footer{
+          background-color: #fff;
+          color: black;
+        }
+    </style>
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Nav tabs -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="../BaiThuHoach/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Product</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Register</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        <!-- slide -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="https://img.websosanh.vn/v10/users/review/images/vesw35n2fmqbh/sach-van-hoc.jpg?compress=85" alt="First slide"style="width:100%; height:300px;">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="http://camnangchiase.com/wp-content/uploads/2019/03/doc-mot-cuon-sach-hay-cung-nhu-tro-chuyen-voi-mot-nguoi-ban-thong-minh-1.jpg" alt="Second slide"style="width:100%; height:300px;">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSKqk_vko0K0AgPaRD5Bvlsb0t4pUZLQuczA&usqp=CAU" alt="Third slide"style="width:100%; height:300px;">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>         
+    </div>
+    <div class="container list-product">
+       <!-- product -->
+       <div class="product">
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://ebdbook.vn/upload/sgk/lop6/bo-lop-5-compressed.jpg?v=1.0.1" alt="Card image cap" style="width:100px; height:100px;">
+              <div class="card-body color">
+                <h5 class="card-title">Tiếng Việt lớp 5</h5>
+                <p class="card-text">Nhà xuất bản:NXB Giáo Dục Việt Nam</p>
+                <p class="card-text" style="color: red;">14.000 vnđ</p>
+                <a href="#" class="btn btn-primary">Chi tiết</a>
+                <a href="#" class="btn btn-primary">Mua</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://ebdbook.vn/upload/sgk/lop6/bo-lop-5-compressed.jpg?v=1.0.1" alt="Card image cap" style="width:100px; height:100px;">
+              <div class="card-body color">
+                <h5 class="card-title">Tiếng Việt lớp 5</h5>
+                <p class="card-text">Nhà xuất bản:NXB Giáo Dục Việt Nam</p>
+                <p class="card-text" style="color: red;">14.000 vnđ</p>
+                <a href="#" class="btn btn-primary">Chi tiết</a>
+                <a href="#" class="btn btn-primary">Mua</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://ebdbook.vn/upload/sgk/lop6/bo-lop-5-compressed.jpg?v=1.0.1" alt="Card image cap"style="width:100px; height:100px;">
+              <div class="card-body color">
+                <h5 class="card-title">Tiếng Việt lớp 5</h5>
+                <p class="card-text">Nhà xuất bản:NXB Giáo Dục Việt Nam</p>
+                <p class="card-text" style="color: red;">14.000 vnđ</p>
+                <a href="#" class="btn btn-primary">Chi tiết</a>
+                <a href="#" class="btn btn-primary">Mua</a>
+              </div>
+            </div>
+          </div>
+      </div>          
+      </div>
+
+      <div class="product">
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://ebdbook.vn/upload/sgk/lop6/bo-lop-5-compressed.jpg?v=1.0.1" alt="Card image cap" style="width:100px; height:100px;">
+              <div class="card-body color">
+                <h5 class="card-title">Tiếng Việt lớp 5</h5>
+                <p class="card-text">Nhà xuất bản:NXB Giáo Dục Việt Nam</p>
+                <p class="card-text" style="color: red;">14.000 vnđ</p>
+                <a href="#" class="btn btn-primary">Chi tiết</a>
+                <a href="#" class="btn btn-primary">Mua</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://ebdbook.vn/upload/sgk/lop6/bo-lop-5-compressed.jpg?v=1.0.1" alt="Card image cap" style="width:100px; height:100px;">
+              <div class="card-body color">
+                <h5 class="card-title">Tiếng Việt lớp 5</h5>
+                <p class="card-text">Nhà xuất bản:NXB Giáo Dục Việt Nam</p>
+                <p class="card-text" style="color: red;">14.000 vnđ</p>
+                <a href="#" class="btn btn-primary">Chi tiết</a>
+                <a href="#" class="btn btn-primary">Mua</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://ebdbook.vn/upload/sgk/lop6/bo-lop-5-compressed.jpg?v=1.0.1" alt="Card image cap"style="width:100px; height:100px;">
+              <div class="card-body color">
+                <h5 class="card-title">Tiếng Việt lớp 5</h5>
+                <p class="card-text">Nhà xuất bản:NXB Giáo Dục Việt Nam</p>
+                <p class="card-text" style="color: red;">14.000 vnđ</p>
+                <a href="#" class="btn btn-primary">Chi tiết</a>
+                <a href="#" class="btn btn-primary">Mua</a>
+              </div>
+            </div>
+          </div>
+      </div>      
+      </div>
+      <div class="product">
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://ebdbook.vn/upload/sgk/lop6/bo-lop-5-compressed.jpg?v=1.0.1" alt="Card image cap" style="width:100px; height:100px;">
+              <div class="card-body color">
+                <h5 class="card-title">Tiếng Việt lớp 5</h5>
+                <p class="card-text">Nhà xuất bản:NXB Giáo Dục Việt Nam</p>
+                <p class="card-text" style="color: red;">14.000 vnđ</p>
+                <a href="#" class="btn btn-primary">Chi tiết</a>
+                <a href="#" class="btn btn-primary">Mua</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://ebdbook.vn/upload/sgk/lop6/bo-lop-5-compressed.jpg?v=1.0.1" alt="Card image cap" style="width:100px; height:100px;">
+              <div class="card-body color">
+                <h5 class="card-title">Tiếng Việt lớp 5</h5>
+                <p class="card-text">Nhà xuất bản:NXB Giáo Dục Việt Nam</p>
+                <p class="card-text" style="color: red;">14.000 vnđ</p>
+                <a href="#" class="btn btn-primary">Chi tiết</a>
+                <a href="#" class="btn btn-primary">Mua</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://ebdbook.vn/upload/sgk/lop6/bo-lop-5-compressed.jpg?v=1.0.1" alt="Card image cap"style="width:100px; height:100px;">
+              <div class="card-body color">
+                <h5 class="card-title">Tiếng Việt lớp 5</h5>
+                <p class="card-text">Nhà xuất bản:NXB Giáo Dục Việt Nam</p>
+                <p class="card-text" style="color: red;">14.000 vnđ</p>
+                <a href="#" class="btn btn-primary">Chi tiết</a>
+                <a href="#" class="btn btn-primary">Mua</a>
+              </div>
+            </div>
+          </div>
+      </div>      
+      </div>
+      <div class="product">
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://ebdbook.vn/upload/sgk/lop6/bo-lop-5-compressed.jpg?v=1.0.1" alt="Card image cap" style="width:100px; height:100px;">
+              <div class="card-body color">
+                <h5 class="card-title">Tiếng Việt lớp 5</h5>
+                <p class="card-text">Nhà xuất bản:NXB Giáo Dục Việt Nam</p>
+                <p class="card-text" style="color: red;">14.000 vnđ</p>
+                <a href="#" class="btn btn-primary">Chi tiết</a>
+                <a href="#" class="btn btn-primary">Mua</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://ebdbook.vn/upload/sgk/lop6/bo-lop-5-compressed.jpg?v=1.0.1" alt="Card image cap" style="width:100px; height:100px;">
+              <div class="card-body color">
+                <h5 class="card-title">Tiếng Việt lớp 5</h5>
+                <p class="card-text">Nhà xuất bản:NXB Giáo Dục Việt Nam</p>
+                <p class="card-text" style="color: red;">14.000 vnđ</p>
+                <a href="#" class="btn btn-primary">Chi tiết</a>
+                <a href="#" class="btn btn-primary">Mua</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://ebdbook.vn/upload/sgk/lop6/bo-lop-5-compressed.jpg?v=1.0.1" alt="Card image cap"style="width:100px; height:100px;">
+              <div class="card-body color">
+                <h5 class="card-title">Tiếng Việt lớp 5</h5>
+                <p class="card-text">Nhà xuất bản:NXB Giáo Dục Việt Nam</p>
+                <p class="card-text" style="color: red;">14.000 vnđ</p>
+                <a href="#" class="btn btn-primary">Chi tiết</a>
+                <a href="#" class="btn btn-primary">Mua</a>
+              </div>
+            </div>
+          </div>
+      </div>      
+      </div>           
+    </div>
+    <!-- register -->
+    <div class="modal fade color" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="mail" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Password:</label>
+                <input type="password" class="form-control" id="recipient-name">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <blockquote class="blockquote footer">
+      <p class="mb-0">Đây là footer</p>
+      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+</body>
+</html>
